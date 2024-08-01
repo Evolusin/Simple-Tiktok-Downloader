@@ -29,8 +29,8 @@ Check out the live demo of the application [here](https://koalka.toadres.pl/).
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/simple_tiktok_downloader.git
-    cd simple_tiktok_downloader
+    git clone https://github.com/yourusername/Simple-Tiktok-Downloader.git
+    cd Simple-Tiktok-Downloader
     ```
 
 2. **Create a virtual environment:**
@@ -59,7 +59,7 @@ Check out the live demo of the application [here](https://koalka.toadres.pl/).
 1. **Build the Docker image:**
 
     ```sh
-    docker build -t simple_tiktok_downloader .
+    docker build -t Simple-Tiktok-Downloader .
     ```
 
 2. **Run the Docker containers using `docker-compose`:**
