@@ -24,8 +24,8 @@ This project is a web application that allows users to download videos from TikT
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/tiktok-video-downloader.git
-    cd tiktok-video-downloader
+    git clone https://github.com/yourusername/simple_tiktok_downloader.git
+    cd simple_tiktok_downloader
     ```
 
 2. **Create a virtual environment:**
@@ -54,7 +54,7 @@ This project is a web application that allows users to download videos from TikT
 1. **Build the Docker image:**
 
     ```sh
-    docker build -t tiktok-video-downloader .
+    docker build -t simple_tiktok_downloader .
     ```
 
 2. **Run the Docker containers using `docker-compose`:**
