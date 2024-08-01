@@ -2,6 +2,11 @@
 
 This project is a web application that allows users to download videos from TikTok. The application is built using Flask and can be run either directly or using Docker.
 
+## Demo
+
+Check out the live demo of the application [here](https://koalka.toadres.pl/).
+
+
 ## Features
 
 - Download TikTok videos by providing a URL.
