@@ -17,6 +17,8 @@ This project is a web application that allows users to download videos from TikT
 
 ## Installation
 
+
+
 ### Running Locally
 
 1. **Clone the repository:**
@@ -70,6 +72,10 @@ The application uses the following configuration files:
 - `docker-compose.yml`: Defines the services and their configurations.
 - `Dockerfile`: Defines the Docker image for the application.
 - `nginx.conf`: Configuration for the Nginx server.
+
+In the `templates/index.html` file, you can optionally translate the names to English.
+
+In the `nginx.conf` file, change the domain name to your own domain.
 
 ## Project Structure
 - `app.py`: Main application file.
