@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Downloader</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .container {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #343a40;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        /* Nowa klasa do wyśrodkowania GIF-a */
+        .centered-gif {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Odstęp od góry */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Pobierz wideo z TikToka</h1>
+        <form method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="url">Link do wideo TikTok:</label>
+                <input type="text" id="url" name="url" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Pobierz</button>
+        </form>
+    </div>
+    <!-- Dodanie GIF-a -->
+    <div class="d-flex justify-content-center">
+        <img src="https://gifdb.com/images/thumbnail/bear-hug-kiss-bubu-dudu-pdyvjfqgohc9pk18.gif" alt="Bear Hug Kiss" class="img-fluid rounded-circle">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
