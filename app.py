@@ -38,18 +38,20 @@ def index():
     if request.method == 'POST':
         url = request.form['url']
         try:
-            # Configuration for youtube_dl
+            # Generate UUID for filename
+            new_filename = str(uuid.uuid4()) + '.mp4'
+
+            # Configuration for youtube_dl to save directly as UUID filename
             ydl_opts = {
-                'outtmpl': 'downloads/%(title)s.%(ext)s',
+                'outtmpl': f'downloads/{new_filename}',  # Use UUID as filename
                 'format': 'best'
             }
+
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-                info_dict = ydl.extract_info(url, download=True)
-                video_filename = ydl.prepare_filename(info_dict)
-                # change name of file to uuid 
-                new_filename = str(uuid.uuid4()) + '.mp4'
-                os.rename(video_filename, 'downloads/' + new_filename)
-                video_filename = 'downloads/' + new_filename
+                ydl.download([url])  # Download video
+
+            # The file is already saved as new_filename, no need to rename
+            video_filename = 'downloads/' + new_filename
             # Run the delete_files function after 10 minutes
             scheduler.enter(600, 1, delete_files)
 
